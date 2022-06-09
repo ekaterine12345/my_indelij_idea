@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="davaleba12:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/davaleba12_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="davaleba12/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="davaleba12" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

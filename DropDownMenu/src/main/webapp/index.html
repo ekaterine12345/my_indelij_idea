@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            margin: 0;
+            background: #ffffff;
+        }
+        .nav{
+            width: 100%;
+            background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+            height: 70px;
+        }
+
+        .ulli{
+            float: left;
+            margin-top: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            width: 150px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px ;
+            font-family: "Century Gothic";
+            font-weight: bold;
+        }
+        .ulli>a{
+            color: white;
+            text-decoration: none;
+        }
+        .caret {
+            /*cursor: pointer;*/
+            width: 150px;
+            color: cadetblue;
+
+        }
+
+        .nested {
+            margin-top: 35px;
+            display: none;
+            color: cadetblue;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li class="ulli"><span style="color: white" class="caret">კატალოგი</span>
+            <ul class="nested">
+                <li><span class="caret">საყოფაცხოვრბო ტექნიკა</span>
+                    <ul class="nested">
+                        <li>წვრილი ტექნიკა</li>
+                        <li>სამზარეულო ტექნიკა</li>
+                        <li>ყავის აპარატი</li>
+                    </ul>
+                </li>
+                <li>სმარტფონები და ტელეფონები</li>
+                <li>კომპიუტერული ტექნიკა</li>
+                <li>აუდიო და ვიდეო ტექნიკა</li>
+                <li>გაჯეტები და ელექტრო ტრანსპორტი</li>
+                <li>აქსესუარები</li>
+            </ul>
+        </li>
+        <li class="ulli"> <a href="login.html"> შესვლა </a></li>
+        <li class="ulli"> <a href="register.html"> რეგისტრაცია </a></li>
+        <li class="ulli">  ჩვენ შესახებ </li>
+
+    </ul>
+</div>
+
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+        });
+    }
+</script>
+
+</body>
+</html>

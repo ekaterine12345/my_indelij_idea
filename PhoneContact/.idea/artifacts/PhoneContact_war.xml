@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PhoneContact:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>PhoneContact</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="PhoneContact-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="PhoneContact:war exploded" />
+    </root>
+  </artifact>
+</component>
